@@ -15,6 +15,6 @@
   "dependencies": {
     "underscore": "^1.8.2",
     "routes": "^2.0.0",
-    "immutable": "^3.6.4"
+    "clone": "^1.0.1"
   }
 }

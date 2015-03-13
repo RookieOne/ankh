@@ -6,9 +6,11 @@ describe("State", function() {
     beforeEach(function() {
       app = require("../../lib/index.js").createInstance()
 
-      app.createState("/message", {
-        fetch: function() {
-          return "Hello World"
+      app.createState("/message", function() {
+        return {
+          fetch: function() {
+            return "Hello World"
+          }
         }
       })
     })
