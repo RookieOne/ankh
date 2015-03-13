@@ -16,7 +16,7 @@ describe("Commands", function() {
       })
     })
 
-    it("should not emit events and raise error", function() {
+    it("should not emit events and record error", function() {
       app.execute("say-hello-world")
 
       var events = app.getEvents()
